@@ -1,13 +1,14 @@
-import * as LabelPrimitive from '@radix-ui/react-label'
+/* eslint-disable @typescript-eslint/consistent-type-assertions */
+import type * as LabelPrimitive from '@radix-ui/react-label'
 import { Slot } from '@radix-ui/react-slot'
 import * as React from 'react'
 import {
   Controller,
-  ControllerProps,
-  FieldPath,
-  FieldValues,
   FormProvider,
-  useFormContext
+  useFormContext,
+  type ControllerProps,
+  type FieldPath,
+  type FieldValues
 } from 'react-hook-form'
 
 import { Label } from '@/components/ui/Label'
@@ -15,10 +16,10 @@ import { cn } from '@/lib/utils'
 
 const Form = FormProvider
 
-type FormFieldContextValue<
+interface FormFieldContextValue<
   TFieldValues extends FieldValues = FieldValues,
   TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
-> = {
+> {
   name: TName
 }
 
@@ -62,7 +63,7 @@ const useFormField = () => {
   }
 }
 
-type FormItemContextValue = {
+interface FormItemContextValue {
   id: string
 }
 
