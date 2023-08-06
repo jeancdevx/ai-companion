@@ -6,7 +6,7 @@ import { usePathname, useRouter } from 'next/navigation'
 import routes from './Sidebar.constants'
 
 interface SidebarProps {
-  isUpgrade: boolean
+  isUpgrade?: boolean
 }
 
 const Sidebar = ({ isUpgrade }: SidebarProps) => {
