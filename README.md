@@ -1,15 +1,16 @@
 # Software as a Service AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe
 
+![Saas CompanionAI](https://github.com/jcodev2/ai-companion/assets/72767265/119ec4a3-7c8b-4457-9502-c60c3c1ca3a0)
+
 ## Features:
 
 - **Tailwind design**
-- **Tailwind animations and effects**
 - **Clerk Authentication (Email, Google)**
 - **Client form validation and handling using react-hook-form**
 - **Server error handling using react-toast**
-- **Image Generation Tool (Open AI)**
+- **Prisma ORM**
+- **Upload Images to Cloudinary**
 - **Conversation Generation Tool (Open AI)**
-- **Page loading state**
 - **Stripe monthly subscription**
 - **Free tier with API limiting**
 - **How to handle relations between Server and Child components!**
@@ -62,8 +63,6 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
 ### Setup Prisma
-
-Add MySQL Database
 
 ```shell
 npx prisma db push
